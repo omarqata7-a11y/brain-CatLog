@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f4f7;
+  background: linear-gradient(to bottom, #a0e9ff, #f0faff);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,8 +12,10 @@ body {
 
 .main-container {
   text-align: center;
+  position: relative;
 }
 
+/* الدماغ */
 .brain-img {
   width: 250px;
   height: auto;
@@ -25,58 +27,75 @@ body {
   transform: scale(1.05);
 }
 
-/* ====== القائمة الرئيسية ====== */
+/* الانتباه */
+.attention-container {
+  position: relative;
+  margin-top: 50px; /* تبعد الكلمة عن الدماغ لتكون جزء من الشبكة */
+}
+
+#attention-menu {
+  display: inline-block;
+  background-color: #1E90FF;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#attention-menu:hover {
+  background-color: #104E8B;
+  transform: translateY(-2px);
+}
+
+/* القائمة المنسدلة */
 .menu {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-.menu > li {
-  background-color: #fff;
-  margin: 10px 0;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: background-color 0.3s, transform 0.3s;
-  position: relative;
-  width: 300px;
+  margin-top: 10px;
   text-align: right;
 }
 
+.menu > li {
+  background-color: #A3D5FF;
+  margin: 8px 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s, transform 0.3s;
+}
+
 .menu > li:hover {
-  background-color: #e0f0ff;
+  background-color: #78B8FF;
   transform: translateX(5px);
 }
 
-/* ====== القائمة الفرعية ====== */
+/* القوائم الفرعية */
 .submenu {
   list-style: none;
   padding: 0;
   margin: 5px 0 0 0;
   display: none;
-  position: relative;
   text-align: right;
 }
 
 .submenu li {
-  background-color: #f7f9fb;
+  background-color: #FFD580;
   padding: 10px 20px;
   margin: 5px 0;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .submenu li:hover {
-  background-color: #d0e7ff;
+  background-color: #FFB347;
   transform: translateX(5px);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  width: 100%;
+/* الخط */
+.line-svg {
+  margin: 20px auto;
 }
