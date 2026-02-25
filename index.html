@@ -7,56 +7,54 @@
 </head>
 <body>
   <div class="main-container">
-    <!-- صورة الدماغ -->
+
+    <!-- الدماغ في المنتصف -->
     <img src="images/brain.jpg" alt="Brain" class="brain-img">
 
-    <!-- القائمة الرئيسية -->
-    <ul class="menu">
-      <!-- التحليل المعرفي -->
-      <li onclick="window.open('https://docs.google.com/document/d/1GqsEDZGdMofly5Ea4IHdYN2RpxMwBw3naVrC0Qv8Yuc/edit?usp=drivesdk','_blank')">
-        التحليل المعرفي
-      </li>
+    <!-- كلمة الانتباه بعيدة عن الدماغ -->
+    <div class="attention-container">
+      <span id="attention-menu">الانتباه</span>
 
-      <!-- العرض التقديمي الرسمي -->
-      <li onclick="window.open('https://prezi.com/view/wEyDYNbK7VrFPe0LY0n1/?referral_token=8GgrqDlnB3FN','_blank')">
-        العرض التقديمي الرسمي
-      </li>
+      <!-- قائمة منسدلة تظهر عند الضغط على الانتباه -->
+      <ul class="menu" id="attention-submenu">
+        <li onclick="window.open('https://docs.google.com/document/d/1GqsEDZGdMofly5Ea4IHdYN2RpxMwBw3naVrC0Qv8Yuc/edit?usp=drivesdk','_blank')">
+          التحليل المعرفي
+        </li>
+        <li onclick="window.open('https://prezi.com/view/wEyDYNbK7VrFPe0LY0n1/?referral_token=8GgrqDlnB3FN','_blank')">
+          العرض التقديمي الرسمي
+        </li>
+        <!-- الفيديوهات الداعمة -->
+        <li id="videos-menu">الفيديوهات الداعمة
+          <ul class="submenu" id="videos-submenu">
+            <li onclick="window.open('https://youtube.com/shorts/vumZtnwu8nk?si=T1-JcG3YzZrYjYrJ','_blank')">الانتباه الانتقائي (Shorts)</li>
+            <li onclick="window.open('https://youtu.be/2NcvQcef9kY?si=UOB5C8xDtinyiHZV','_blank')">شرح الانتباه</li>
+            <li onclick="window.open('https://youtu.be/fJMvmOpPBsI?si=6z-6SoQMnTVUU0qK','_blank')">كيف نزيد انتباهنا</li>
+            <li onclick="window.open('https://youtu.be/Lftre0B6Yso?si=qAPfymSiXIkmPWH3','_blank')">هل هناك انتباه متعدد</li>
+            <li onclick="window.open('https://youtu.be/jrpFJcthIY0?si=947p2bGBz1JuUOab','_blank')">attention</li>
+          </ul>
+        </li>
+        <!-- المراجع العلمية -->
+        <li id="references-menu">المراجع العلمية
+          <ul class="submenu" id="references-submenu">
+            <li onclick="window.open('https://www.routledge.com/The-Cognitive-Neuroscience-of-Attention-Current-Debates-and-Research/Hopfinger-Slotnick/p/book/9780367501266','_blank')">📚 The Cognitive Neuroscience of Attention – Hopfinger & Slotnick (2021)</li>
+            <li onclick="window.open('https://en.wikipedia.org/wiki/The_Organized_Mind','_blank')">📚 The Organized Mind – Daniel J. Levitin (2014)</li>
+            <li onclick="window.open('https://journalofcognition.org/articles/10.5334/joc.58','_blank')">🧪 Working Memory and Attention – Klaus Oberauer</li>
+            <li onclick="window.open('https://arxiv.org/abs/2103.16775','_blank')">🧪 Neural Attention Models in Deep Learning</li>
+            <li onclick="window.open('https://arxiv.org/abs/2012.02659','_blank')">🧪 Understanding Attention: In Minds and Machines</li>
+            <li onclick="window.open('https://eduj.uowasit.edu.iq/index.php/eduj/article/view/1833','_blank')">🎓 الانتباه المتواصل لدى طلبة الجامعة – رسالة ماجستير</li>
+            <li onclick="window.open('https://arabpsychology.com/lesson/attention-in-psychology-an-introduction-to-focus-and-awareness/','_blank')">🌐 Arab Psychology – تعريف وأنواع الانتباه</li>
+            <li onclick="window.open('https://arabpsychology.com/trm/%D8%A7%D9%86%D8%AA%D8%A8%D8%A7%D9%87-attention/','_blank')">🌐 عرب سيكولوجي – تاريخ ومفاهيم الانتباه</li>
+            <li onclick="window.open('https://www.marefa.org/%D8%A7%D9%86%D8%AA%D8%A8%D8%A7%D9%87','_blank')">🌐 المعرفة – تعريف مركّز للانتباه</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-      <!-- الفيديوهات الداعمة -->
-      <li id="videos-menu">
-        الفيديوهات الداعمة
-        <ul class="submenu" id="videos-submenu">
-          <li onclick="window.open('https://youtube.com/shorts/vumZtnwu8nk?si=T1-JcG3YzZrYjYrJ','_blank')">الانتباه الانتقائي (Shorts)</li>
-          <li onclick="window.open('https://youtu.be/2NcvQcef9kY?si=UOB5C8xDtinyiHZV','_blank')">شرح الانتباه</li>
-          <li onclick="window.open('https://youtu.be/fJMvmOpPBsI?si=6z-6SoQMnTVUU0qK','_blank')">كيف نزيد انتباهنا</li>
-          <li onclick="window.open('https://youtu.be/Lftre0B6Yso?si=qAPfymSiXIkmPWH3','_blank')">هل هناك انتباه متعدد</li>
-          <li onclick="window.open('https://youtu.be/jrpFJcthIY0?si=947p2bGBz1JuUOab','_blank')">attention</li>
-        </ul>
-      </li>
+    <!-- SVG الخط بين الدماغ وكلمة الانتباه -->
+    <svg height="100" width="200" class="line-svg">
+      <line x1="0" y1="0" x2="200" y2="0" style="stroke:#1E90FF;stroke-width:3" />
+    </svg>
 
-      <!-- المراجع العلمية -->
-      <li id="references-menu">
-        المراجع العلمية
-        <ul class="submenu" id="references-submenu">
-          <!-- كتب -->
-          <li onclick="window.open('https://www.routledge.com/The-Cognitive-Neuroscience-of-Attention-Current-Debates-and-Research/Hopfinger-Slotnick/p/book/9780367501266','_blank')">📚 The Cognitive Neuroscience of Attention – Hopfinger & Slotnick (2021)</li>
-          <li onclick="window.open('https://en.wikipedia.org/wiki/The_Organized_Mind','_blank')">📚 The Organized Mind – Daniel J. Levitin (2014)</li>
-
-          <!-- أبحاث -->
-          <li onclick="window.open('https://journalofcognition.org/articles/10.5334/joc.58','_blank')">🧪 Working Memory and Attention – Klaus Oberauer</li>
-          <li onclick="window.open('https://arxiv.org/abs/2103.16775','_blank')">🧪 Neural Attention Models in Deep Learning</li>
-          <li onclick="window.open('https://arxiv.org/abs/2012.02659','_blank')">🧪 Understanding Attention: In Minds and Machines</li>
-
-          <!-- رسائل -->
-          <li onclick="window.open('https://eduj.uowasit.edu.iq/index.php/eduj/article/view/1833','_blank')">🎓 الانتباه المتواصل لدى طلبة الجامعة – رسالة ماجستير</li>
-
-          <!-- مصادر موثوقة -->
-          <li onclick="window.open('https://arabpsychology.com/lesson/attention-in-psychology-an-introduction-to-focus-and-awareness/','_blank')">🌐 Arab Psychology – تعريف وأنواع الانتباه</li>
-          <li onclick="window.open('https://arabpsychology.com/trm/%D8%A7%D9%86%D8%AA%D8%A8%D8%A7%D9%87-attention/','_blank')">🌐 عرب سيكولوجي – تاريخ ومفاهيم الانتباه</li>
-          <li onclick="window.open('https://www.marefa.org/%D8%A7%D9%86%D8%AA%D8%A8%D8%A7%D9%87','_blank')">🌐 المعرفة – تعريف مركّز للانتباه</li>
-        </ul>
-      </li>
-    </ul>
   </div>
 
   <script src="script.js"></script>
