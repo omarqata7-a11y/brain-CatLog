@@ -1,0 +1,82 @@
+/* ====== تصميم الصفحة ====== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.brain-img {
+  width: 250px;
+  height: auto;
+  transition: transform 0.5s;
+  margin-bottom: 40px;
+}
+
+.brain-img:hover {
+  transform: scale(1.05);
+}
+
+/* ====== القائمة الرئيسية ====== */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  width: 300px;
+  text-align: right;
+}
+
+.menu > li:hover {
+  background-color: #e0f0ff;
+  transform: translateX(5px);
+}
+
+/* ====== القائمة الفرعية ====== */
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  display: none;
+  position: relative;
+  text-align: right;
+}
+
+.submenu li {
+  background-color: #f7f9fb;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submenu li:hover {
+  background-color: #d0e7ff;
+  transform: translateX(5px);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
